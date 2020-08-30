@@ -244,6 +244,12 @@ private ArrayList<String> ceps;
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             //chamando metodo que remove
                             String Valor=  ceps.get(position);
+                            Intent intent=new Intent(getApplicationContext(),MapsActivity.class);
+
+                            intent.putExtra("cep",Valor);
+
+                            startActivity(intent);
+
                             Toast.makeText(getApplicationContext(),"Cep: "+Valor,Toast.LENGTH_LONG).show();
                         }
                     });
