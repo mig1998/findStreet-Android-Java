@@ -31,13 +31,10 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
-        <activity
-            android:name=".MainActivity"
+            android:name="com.example.request.MainActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".endereco"
+            android:name="com.example.request.endereco"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
